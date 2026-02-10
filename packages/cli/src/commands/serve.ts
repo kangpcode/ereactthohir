@@ -45,6 +45,8 @@ export async function serve(): Promise<void> {
     }
 
     console.log(chalk.cyan.bold('\n🚀 EreactThohir Framework - Mode Jalan'));
+    const sig = Buffer.from('RGhhZmEgTmF6dWxhIFBlcm1hZGkgKEthbmdQQ29kZSk=', 'base64').toString('utf-8');
+    console.log(chalk.gray(`   Protected by Signature: ${chalk.yellow(sig)}`));
     console.log(chalk.gray('─────────────────────────────────────────'));
     console.log(chalk.blue('🌱 Menginisialisasi kernel...'));
 
