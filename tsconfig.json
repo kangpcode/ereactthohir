@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true
+    },
+    "references": [
+        {
+            "path": "./packages/cli"
+        },
+        {
+            "path": "./packages/core"
+        },
+        {
+            "path": "./packages/rice-ui"
+        },
+        {
+            "path": "./packages/semouth"
+        }
+    ],
+    "exclude": [
+        "node_modules",
+        "demo-app",
+        "test-fullstack-app",
+        "my-app",
+        "tester"
+    ]
+}

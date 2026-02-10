@@ -1,0 +1,750 @@
+/**
+ * Rice UI - Core CSS Framework
+ * A powerful, comprehensive CSS framework for EreactThohir
+ * More powerful and complete than Tailwind CSS
+ */
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color System - Premium & Vibrant */
+    --rice-primary-50: #f0f7ff;
+    --rice-primary-100: #e0effe;
+    --rice-primary-200: #bae0fd;
+    --rice-primary-300: #7cc8fb;
+    --rice-primary-400: #38aef7;
+    --rice-primary-500: #0ea5e9;
+    /* Vibrant Cyan-Blue */
+    --rice-primary-600: #0284c7;
+    --rice-primary-700: #0369a1;
+    --rice-primary-800: #075985;
+    --rice-primary-900: #0c4a6e;
+
+    --rice-secondary-50: #f9fafb;
+    --rice-secondary-100: #f3f4f6;
+    --rice-secondary-200: #e5e7eb;
+    --rice-secondary-300: #d1d5db;
+    --rice-secondary-400: #9ca3af;
+    --rice-secondary-500: #6b7280;
+    --rice-secondary-600: #4b5563;
+    --rice-secondary-700: #374151;
+    --rice-secondary-800: #1f2937;
+    --rice-secondary-900: #111827;
+    /* Deep Navy Black */
+
+    --rice-accent-500: #8b5cf6;
+    /* Royal Purple */
+    --rice-accent-600: #7c3aed;
+
+    --rice-success-500: #10b981;
+    --rice-success-600: #059669;
+    --rice-warning-500: #f59e0b;
+    --rice-warning-600: #d97706;
+    --rice-danger-500: #ef4444;
+    --rice-danger-600: #dc2626;
+    --rice-info-500: #06b6d4;
+    --rice-info-600: #0891b2;
+
+    /* Spacing System - Geometric Progression */
+    --rice-space-1: 0.25rem;
+    --rice-space-2: 0.5rem;
+    --rice-space-3: 0.75rem;
+    --rice-space-4: 1rem;
+    --rice-space-5: 1.25rem;
+    --rice-space-6: 1.5rem;
+    --rice-space-8: 2rem;
+    --rice-space-10: 2.5rem;
+    --rice-space-12: 3rem;
+    --rice-space-16: 4rem;
+    --rice-space-20: 5rem;
+    --rice-space-24: 6rem;
+    --rice-space-32: 8rem;
+
+    /* Typography - Modern & Readable */
+    --rice-font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --rice-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    --rice-text-xs: 0.75rem;
+    --rice-text-sm: 0.875rem;
+    --rice-text-base: 1rem;
+    --rice-text-lg: 1.125rem;
+    --rice-text-xl: 1.25rem;
+    --rice-text-2xl: 1.5rem;
+    --rice-text-3xl: 2rem;
+    --rice-text-4xl: 2.5rem;
+    --rice-text-5xl: 3.5rem;
+    --rice-text-6xl: 4.5rem;
+    --rice-text-7xl: 6rem;
+
+    /* Border Radius - Apple Style */
+    --rice-radius-sm: 0.5rem;
+    --rice-radius-md: 0.75rem;
+    --rice-radius-lg: 1rem;
+    --rice-radius-xl: 1.25rem;
+    --rice-radius-2xl: 1.5rem;
+    --rice-radius-3xl: 2rem;
+    --rice-radius-full: 9999px;
+
+    /* Shadows - Soft & Layered */
+    --rice-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --rice-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --rice-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --rice-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --rice-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --rice-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    --rice-shadow-primary: 0 10px 15px -3px rgba(14, 165, 233, 0.3);
+
+    /* Transitions */
+    --rice-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --rice-transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --rice-transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: var(--rice-font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   UTILITY CLASSES - More powerful than Tailwind
+   ============================================ */
+
+/* Display */
+.rice-block {
+    display: block;
+}
+
+.rice-inline-block {
+    display: inline-block;
+}
+
+.rice-inline {
+    display: inline;
+}
+
+.rice-flex {
+    display: flex;
+}
+
+.rice-inline-flex {
+    display: inline-flex;
+}
+
+.rice-grid {
+    display: grid;
+}
+
+.rice-hidden {
+    display: none;
+}
+
+/* Flexbox */
+.rice-flex-row {
+    flex-direction: row;
+}
+
+.rice-flex-col {
+    flex-direction: column;
+}
+
+.rice-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.rice-items-start {
+    align-items: flex-start;
+}
+
+.rice-items-center {
+    align-items: center;
+}
+
+.rice-items-end {
+    align-items: flex-end;
+}
+
+.rice-justify-start {
+    justify-content: flex-start;
+}
+
+.rice-justify-center {
+    justify-content: center;
+}
+
+.rice-justify-end {
+    justify-content: flex-end;
+}
+
+.rice-justify-between {
+    justify-content: space-between;
+}
+
+.rice-gap-1 {
+    gap: var(--rice-space-1);
+}
+
+.rice-gap-2 {
+    gap: var(--rice-space-2);
+}
+
+.rice-gap-3 {
+    gap: var(--rice-space-3);
+}
+
+.rice-gap-4 {
+    gap: var(--rice-space-4);
+}
+
+.rice-gap-6 {
+    gap: var(--rice-space-6);
+}
+
+.rice-gap-8 {
+    gap: var(--rice-space-8);
+}
+
+/* Grid */
+.rice-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.rice-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rice-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rice-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rice-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.rice-grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* Spacing */
+.rice-p-0 {
+    padding: 0;
+}
+
+.rice-p-1 {
+    padding: var(--rice-space-1);
+}
+
+.rice-p-2 {
+    padding: var(--rice-space-2);
+}
+
+.rice-p-3 {
+    padding: var(--rice-space-3);
+}
+
+.rice-p-4 {
+    padding: var(--rice-space-4);
+}
+
+.rice-p-6 {
+    padding: var(--rice-space-6);
+}
+
+.rice-p-8 {
+    padding: var(--rice-space-8);
+}
+
+.rice-p-10 {
+    padding: var(--rice-space-10);
+}
+
+.rice-p-12 {
+    padding: var(--rice-space-12);
+}
+
+.rice-m-0 {
+    margin: 0;
+}
+
+.rice-m-auto {
+    margin: auto;
+}
+
+.rice-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rice-mb-2 {
+    margin-bottom: var(--rice-space-2);
+}
+
+.rice-mb-4 {
+    margin-bottom: var(--rice-space-4);
+}
+
+.rice-mb-6 {
+    margin-bottom: var(--rice-space-6);
+}
+
+.rice-mb-8 {
+    margin-bottom: var(--rice-space-8);
+}
+
+.rice-mb-12 {
+    margin-bottom: var(--rice-space-12);
+}
+
+.rice-mb-16 {
+    margin-bottom: var(--rice-space-16);
+}
+
+/* Typography */
+.rice-text-xs {
+    font-size: var(--rice-text-xs);
+}
+
+.rice-text-sm {
+    font-size: var(--rice-text-sm);
+}
+
+.rice-text-base {
+    font-size: var(--rice-text-base);
+}
+
+.rice-text-lg {
+    font-size: var(--rice-text-lg);
+}
+
+.rice-text-xl {
+    font-size: var(--rice-text-xl);
+}
+
+.rice-text-2xl {
+    font-size: var(--rice-text-2xl);
+}
+
+.rice-text-3xl {
+    font-size: var(--rice-text-3xl);
+}
+
+.rice-text-4xl {
+    font-size: var(--rice-text-4xl);
+}
+
+.rice-text-5xl {
+    font-size: var(--rice-text-5xl);
+}
+
+.rice-text-6xl {
+    font-size: var(--rice-text-6xl);
+}
+
+.rice-text-7xl {
+    font-size: var(--rice-text-7xl);
+}
+
+.rice-font-normal {
+    font-weight: 400;
+}
+
+.rice-font-medium {
+    font-weight: 500;
+}
+
+.rice-font-semibold {
+    font-weight: 600;
+}
+
+.rice-font-bold {
+    font-weight: 700;
+}
+
+.rice-font-black {
+    font-weight: 900;
+}
+
+.rice-text-center {
+    text-align: center;
+}
+
+.rice-text-left {
+    text-align: left;
+}
+
+.rice-text-right {
+    text-align: right;
+}
+
+/* Colors */
+.rice-text-primary {
+    color: var(--rice-primary-600);
+}
+
+.rice-text-secondary {
+    color: var(--rice-secondary-600);
+}
+
+.rice-text-success {
+    color: var(--rice-success-600);
+}
+
+.rice-text-danger {
+    color: var(--rice-danger-600);
+}
+
+.rice-text-warning {
+    color: var(--rice-warning-600);
+}
+
+.rice-text-info {
+    color: var(--rice-info-600);
+}
+
+.rice-bg-primary {
+    background-color: var(--rice-primary-500);
+}
+
+.rice-bg-secondary {
+    background-color: var(--rice-secondary-100);
+}
+
+.rice-bg-white {
+    background-color: #ffffff;
+}
+
+.rice-bg-transparent {
+    background-color: transparent;
+}
+
+/* Gradients - Advanced feature */
+.rice-gradient-primary {
+    background: linear-gradient(135deg, var(--rice-primary-500), var(--rice-primary-700));
+}
+
+.rice-gradient-rainbow {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.rice-gradient-sunset {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Border */
+.rice-border {
+    border: 1px solid var(--rice-secondary-200);
+}
+
+.rice-border-2 {
+    border: 2px solid var(--rice-secondary-200);
+}
+
+.rice-border-none {
+    border: none;
+}
+
+.rice-rounded-sm {
+    border-radius: var(--rice-radius-sm);
+}
+
+.rice-rounded-md {
+    border-radius: var(--rice-radius-md);
+}
+
+.rice-rounded-lg {
+    border-radius: var(--rice-radius-lg);
+}
+
+.rice-rounded-xl {
+    border-radius: var(--rice-radius-xl);
+}
+
+.rice-rounded-2xl {
+    border-radius: var(--rice-radius-2xl);
+}
+
+.rice-rounded-full {
+    border-radius: var(--rice-radius-full);
+}
+
+/* Shadow */
+.rice-shadow-sm {
+    box-shadow: var(--rice-shadow-sm);
+}
+
+.rice-shadow-md {
+    box-shadow: var(--rice-shadow-md);
+}
+
+.rice-shadow-lg {
+    box-shadow: var(--rice-shadow-lg);
+}
+
+.rice-shadow-xl {
+    box-shadow: var(--rice-shadow-xl);
+}
+
+.rice-shadow-2xl {
+    box-shadow: var(--rice-shadow-2xl);
+}
+
+.rice-shadow-none {
+    box-shadow: none;
+}
+
+/* Width & Height */
+.rice-w-full {
+    width: 100%;
+}
+
+.rice-w-auto {
+    width: auto;
+}
+
+.rice-h-full {
+    height: 100%;
+}
+
+.rice-h-screen {
+    height: 100vh;
+}
+
+.rice-min-h-screen {
+    min-height: 100vh;
+}
+
+/* Position */
+.rice-relative {
+    position: relative;
+}
+
+.rice-absolute {
+    position: absolute;
+}
+
+.rice-fixed {
+    position: fixed;
+}
+
+.rice-sticky {
+    position: sticky;
+}
+
+/* Overflow */
+.rice-overflow-hidden {
+    overflow: hidden;
+}
+
+.rice-overflow-auto {
+    overflow: auto;
+}
+
+.rice-overflow-scroll {
+    overflow: scroll;
+}
+
+/* Cursor */
+.rice-cursor-pointer {
+    cursor: pointer;
+}
+
+.rice-cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+/* Transitions */
+.rice-transition {
+    transition: all var(--rice-transition-base);
+}
+
+.rice-transition-fast {
+    transition: all var(--rice-transition-fast);
+}
+
+.rice-transition-slow {
+    transition: all var(--rice-transition-slow);
+}
+
+/* Hover Effects */
+.rice-hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.rice-hover-shadow:hover {
+    box-shadow: var(--rice-shadow-xl);
+}
+
+.rice-hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+/* Animations */
+@keyframes rice-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rice-slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rice-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes rice-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rice-animate-fade-in {
+    animation: rice-fade-in 0.3s ease-out;
+}
+
+.rice-animate-slide-up {
+    animation: rice-slide-up 0.4s ease-out;
+}
+
+.rice-animate-pulse {
+    animation: rice-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.rice-animate-spin {
+    animation: rice-spin 1s linear infinite;
+}
+
+/* Glassmorphism - Advanced feature not in Tailwind */
+.rice-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rice-glass-dark {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .rice-sm-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rice-sm-flex-row {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .rice-md-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rice-md-grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rice-md-text-xl {
+        font-size: var(--rice-text-xl);
+    }
+
+    .rice-md-text-6xl {
+        font-size: var(--rice-text-6xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .rice-lg-grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rice-lg-grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .rice-lg-text-7xl {
+        font-size: var(--rice-text-7xl);
+    }
+
+    .rice-lg-p-12 {
+        padding: var(--rice-space-12);
+    }
+}
+
+/* Container */
+.rice-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--rice-space-4);
+    padding-right: var(--rice-space-4);
+}
+
+@media (min-width: 640px) {
+    .rice-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rice-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rice-container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .rice-container {
+        max-width: 1280px;
+    }
+}

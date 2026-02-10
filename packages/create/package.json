@@ -1,0 +1,26 @@
+{
+    "name": "@ereactthohir/create",
+    "version": "1.5.0",
+    "description": "Create a new EreactThohir project",
+    "main": "index.js",
+    "bin": {
+        "create-ereactthohir": "./index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "create-ereactthohir",
+        "ereactthohir",
+        "generator",
+        "scaffold"
+    ],
+    "author": "KangPCode (Dhafa Nazula Permadi)",
+    "license": "MIT",
+    "dependencies": {
+        "@ereactthohir/cli": "^1.4.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

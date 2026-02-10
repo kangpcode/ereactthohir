@@ -1,0 +1,42 @@
+{
+    "name": "ereactthohir-monorepo",
+    "version": "1.5.0",
+    "description": "A powerful, enterprise-grade fullstack TypeScript framework for modern web and mobile development",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "tsc -b",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "serve": "ts-node packages/cli/src/index.ts serve",
+        "dev": "npm run serve",
+        "migrate": "ts-node packages/cli/src/index.ts migrate",
+        "generate:model": "ts-node packages/cli/src/index.ts generate:model",
+        "generate:controller": "ts-node packages/cli/src/index.ts generate:controller",
+        "publish-all": "node scripts/publish-all.js"
+    },
+    "keywords": [
+        "framework",
+        "typescript",
+        "react",
+        "mobile",
+        "web",
+        "laravel",
+        "full-stack"
+    ],
+    "author": "KangPCode (Dhafa Nazula Permadi)",
+    "license": "GPL-3.0-only",
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^20.0.0",
+        "jest": "^30.2.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.3"
+    }
+}

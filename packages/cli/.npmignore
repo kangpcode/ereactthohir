@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Development files
+src/
+*.ts
+!dist/
+
+# Tests
+tests/
+*.test.ts
+jest.config.js
+coverage/
+
+# Build files
+tsconfig.json
+tsconfig.*.json
+
+# Git
+.git
+.gitignore
+
+# Documentation
+docs/
+examples/
+*.md
+!README.md
+
+# Config
+.env
+.env.*
+.editorconfig
+.prettierrc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Other
+.npmrc
+.yarn/
