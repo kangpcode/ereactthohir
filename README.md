@@ -36,7 +36,7 @@
 ## 👨‍💻 Creator / Pencipta
 
 <p align="left">
-  <img src="https://github.com/dhafanazula.png" width="120" style="border-radius: 50%" alt="Dhafa Nazula Permadi">
+  <img src="https://ereactthohir.pcode.my.id/images/creator.jpg" width="120" style="border-radius: 50%" alt="Dhafa Nazula Permadi">
   <br>
   <b>Dhafa Nazula Permadi (KangPCode)</b><br>
   Founder & Lead Architect
