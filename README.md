@@ -1,6 +1,6 @@
 # EreactThohir Framework 🚀
 <p align="center">
-  <img src="[https://ereactthohir.pcode.my.id/images/ereactthohir-logo.png]" width="200" alt="EreactThohir Logo">
+  <img src="https://ereactthohir.pcode.my.id/images/ereactthohir-logo.png" width="200" alt="EreactThohir Logo">
 </p>
 
 [![v1.5.0](https://img.shields.io/badge/version-1.5.0-blue.svg)](CHANGELOG.md)
